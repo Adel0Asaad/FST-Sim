@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<head>
+		<script src='src/data-initiate.js'></script>
+		<!-- <script src='node_modules/javascript-state-machine/dist/state-machine.js'></script> -->
+		<!-- <script src='node_modules/xstate/dist/xstate.js'></script> -->
+		
+        <title>Control Panel</title>
+        <link rel="stylesheet" href="src/styles1.css" type="text/css">
+		<style>
+			label{
+				color: azure;
+				font-size: 18px;
+			}
+		</style>
+	</head>
+	<body style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) ,url('../files/blckbg.jpg'); background-size: cover; background-attachment: fixed;">
+		
+		<div id="ourDiv" style="margin: auto; width: 50%;">
+		<form id="registrationForm">
+			<fieldset style="margin-top: 60;"><br>
+				<legend style="color: #2BC0E4 ; font-size: 25px;"> FST Details </legend>
+				<label for = "States"> States:<br></label>
+				<input type = "text" class="inputTextData" id ="States" name = "States" placeholder="No. of states: 3, 4, 5.."><br><br></input>
+				<label for = "Inputs"> Inputs:<br></label>
+				<input type = "text" class="inputTextData" id ="Inputs" name = "Inputs" placeholder="No. of inputs: 2, 3, 4.."><br><br></input>
+				<label for = "Outputs"> Outputs:<br></label>
+				<input type = "text" class="inputTextData" id ="Outputs" name = "Outputs" placeholder="No. of outputs: 2, 3, 4.."><br><br></input>
+			</fieldset>
+<!--			<a href="#" class="button button-1" style="text-decoration: none;">Login</a> 
+       			<a href="#" class="button button-1" style="text-decoration: none;">Register</a>
+                <input type = "submit" class="button button-1" style="text-decoration: none;"></button>
+-->              
+
+            <button id="firstData" class="button button-1" style="text-decoration: none;">Submit</button>
+			
+		</form>
+		</div>
+		<script type="module" src='src/data-1.js'></script>
+	</body>
+
+</html>
